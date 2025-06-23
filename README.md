@@ -1,4 +1,4 @@
-<center><img src="momo-placeholder.png"</center>
+<center><img src="momo-placeholder.png" width="128" height="128"></center>
 
 # Momo's Big Adventure 🐾
 
