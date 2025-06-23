@@ -1,4 +1,4 @@
-/cat-explorer/
+`/cat-explorer/
 ├── index.html
 ├── style.css
 ├── script.js
@@ -6,3 +6,4 @@
 │   ├── tileset.png (optional)
 │   ├── momo.png
 │   ├── npc.png
+`
