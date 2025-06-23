@@ -1,3 +1,5 @@
+<center><img src="momo-placeholder.png"</center>
+
 # Momo's Big Adventure 🐾
 
 A kid-friendly browser-based adventure game featuring Momo the cat! Built using HTML5 Canvas and JavaScript. This project is a summer coding & creativity journey with the kids — every tile, quest, and level is made with love 💛
