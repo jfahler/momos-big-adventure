@@ -1,0 +1,6 @@
+[gd_resource type="CompressedTexture2D" format=3 uid="uid://pwrowvo1h7b5"]
+
+[resource]
+resource_local_to_scene = true
+resource_name = "Background Lake"
+load_path = "res://.godot/imported/background.png-98289422cd7d93003950872a7b97021f.ctex"

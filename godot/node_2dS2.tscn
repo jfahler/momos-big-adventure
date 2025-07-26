@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuo75p5ke02oa"]
+
+[ext_resource type="Texture2D" uid="uid://pwrowvo1h7b5" path="res://new_compressed_texture_2d.tres" id="1_85xrh"]
+[ext_resource type="Texture2D" uid="uid://bd8elqi5w57ks" path="res://momo-placeholder.png" id="2_phaxy"]
+[ext_resource type="Script" uid="uid://c17t8wjo4hyv8" path="res://player.gd" id="2_wif6r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_houkb"]
+radius = 37.0
+height = 76.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="NewCompressedTexture2d" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(310, 183)
+texture = ExtResource("1_85xrh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+build_mode = 1
+polygon = PackedVector2Array(10, -40, -88, -31, -156, 118, -191, 132, -203, 146, -202, 369, -168, 370, -143, 442, -91, 497, -93, 523, 113, 525, 112, 481, 143, 453, 202, 449, 237, 496, 282, 438, 324, 443, 365, 497, 362, 522, 553, 524, 559, 454, 637, 453, 640, 369, 825, 360, 820, 127, 766, 119, 770, 19, 753, 9, 720, 49, 641, -4, 602, -63, 554, -35)
+
+[node name="player" type="CharacterBody2D" parent="."]
+script = ExtResource("2_wif6r")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(310, 183)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(310, 183)
+shape = SubResource("CapsuleShape2D_houkb")
+
+[node name="Momo-placeholder" type="Sprite2D" parent="player/CollisionShape2D"]
+z_index = 1
+texture_filter = 3
+scale = Vector2(0.53125, 0.5)
+texture = ExtResource("2_phaxy")
