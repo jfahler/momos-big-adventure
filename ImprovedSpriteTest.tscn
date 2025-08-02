@@ -142,7 +142,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0q4fl"]
-size = Vector2(39, 61)
+size = Vector2(20, 31)
 
 [node name="Node2D" type="Node2D"]
 
@@ -156,12 +156,12 @@ position = Vector2(1, 1)
 script = ExtResource("1_x1lpx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ella"]
-position = Vector2(323.667, 100)
+position = Vector2(439, 74)
 sprite_frames = SubResource("SpriteFrames_y0ryc")
 animation = &"walk_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ella"]
-position = Vector2(439, 74)
+position = Vector2(439, 74.5)
 shape = SubResource("RectangleShape2D_0q4fl")
 
 [node name="Camera2D" type="Camera2D" parent="Ella"]
